@@ -1,0 +1,23 @@
+giga-chat:
+  api-url: https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+  auth-url: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+  client-id: ${GC_CLIENT_ID:NOT_SET}
+  client-secret: ${GC_CLIENT_SECRET:NOT_SET}
+  cert-path: src/main/resources/certs/russian_trusted_root_ca.cer
+  token-refresh-buffer-ms: 60000
+  retry-initial-delay-ms: 1000
+  retry-delay-multiplier: 2
+
+api:
+  user:
+    username: ${HRA_USERNAME:admin}
+    password: ${HRA_PASSWORD:secret}
+
+cors:
+  allowed-origin: "http://localhost:8080"
+
+openapi:
+  server-url: "http://localhost:8080"
+
+server:
+  max-http-request-header-size: 64KB

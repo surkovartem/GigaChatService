@@ -1,4 +1,4 @@
-package org.surkov.gigachatservice;
+package org.surkov.gigachatservice.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -6,7 +6,9 @@ import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import org.surkov.gigachatservice.utils.TokenManager;
 import org.surkov.gigachatservice.config.GigaChatConfig;
+import org.surkov.gigachatservice.utils.GigaChatApiClient;
 
 import java.io.IOException;
 

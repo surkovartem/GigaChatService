@@ -1,4 +1,4 @@
-package org.surkov.gigachatservice;
+package org.surkov.gigachatservice.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import lombok.RequiredArgsConstructor;

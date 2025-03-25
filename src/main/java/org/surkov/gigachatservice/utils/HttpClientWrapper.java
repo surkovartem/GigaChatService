@@ -1,4 +1,4 @@
-package org.surkov.gigachatservice;
+package org.surkov.gigachatservice.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,7 +11,6 @@ import okhttp3.ResponseBody;
 import org.springframework.stereotype.Component;
 import org.surkov.gigachatservice.exception.ApiRequestException;
 import org.surkov.gigachatservice.exception.AuthenticationException;
-import org.surkov.gigachatservice.utils.SecurityUtils;
 
 import java.io.IOException;
 

@@ -21,3 +21,25 @@ openapi:
 
 server:
   max-http-request-header-size: 64KB
+
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+# Настройки для логирования SQL (опционально)
+logging:
+  level:
+    org.hibernate.SQL: WARN
+    org.surkov.gigachatservice: INFO
+
+# (Прочие настройки интеграции с GigaChat API, OAuth2 и т.д. могут быть добавлены здесь)
